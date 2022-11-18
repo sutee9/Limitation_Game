@@ -4,7 +4,6 @@ class Player {
   float size; //player diameter
   int status; //safe or not safe
   int id; //which player
-  Map map;
 
   //playerball
   int pSize = 40;
@@ -16,7 +15,7 @@ class Player {
   //collision variables
   float zRadius; //radius of the main ellipse
 
-  //x and y coordinates of the safe zone
+  //x and y coordinates of the safe zone //TODO: REMOVE THESE!!!!
   int zoneX;
   int zoneY;
   int zoneSize;
@@ -40,6 +39,15 @@ class Player {
 
     x = mouseX;
     y = mouseY;
+  }
+  
+  //Check if player is in the safe zone
+  boolean isSafe (Map level){
+    boolean isSafe = false;
+    //Allerlei dinge prüfen (level.zoneX ....)
+    return isSafe;
+    //frage beantworten
+    
   }
 
   //draw the player
